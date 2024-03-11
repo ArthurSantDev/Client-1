@@ -1,0 +1,166 @@
+* {
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+    font-size: 10px;
+}
+
+body {
+    background: linear-gradient(to bottom left,#9494a0,#37373b);
+    background-repeat: no-repeat;
+    height: 100%;
+    user-select: none;
+}
+
+.gradient { /* Fundo dos btn */
+    background: linear-gradient(to bottom,#ffffff,#ffffff);
+} /*#ebebeb*/
+
+:root {
+    --color-text: #000000;
+    --color-text-2: #ffffff;
+    --color-design: #b9b9b9;
+}
+
+.container {   /* Tamanho do que parece na tela */
+    max-width: 400px;  /* Tamanho máximo para os lados */
+    max-height: 700px; /* Tamanho máximo para cima e baixo */
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: var(--color-text);
+}
+
+a {     /* Custum links */
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+/* HEADER STYLE ///////////////////////////////*/
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 35%;
+}
+
+header > img {
+    max-width: 115px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+}
+
+header > h1 {
+    font-style: 130%;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--color-text-2);
+}
+
+header p {
+    font-size: 110%;
+    color: var(--color-text-2);
+}
+
+/* BTN STYLE ///////////////////////////////*/
+
+section.btn-links {  /* BTN longos */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+a.link button {  /* BTN longos */
+    width: 100%;
+    padding: 13px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: var(--color-text);
+}
+
+a.link b {  /* Text */
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+a.link i {  /* Icons */
+    color: var(--color-text);
+    margin-right: 20px;
+    font-size: 22px;
+}
+
+button:active {  /* Animação dos btn */
+    transform: scale(1.07);
+    transition: 0.1s;
+}
+
+/* FOOTER STYLE ////////////////////////////*/
+
+footer {  /* BTN Quadrados */
+    text-align: center;
+    margin: 30px;
+}
+
+footer a.btn-footer {   /* BTN de baixo */ /* O fundo dele é o .gradient */
+    width: 40px;
+    height:40px;    
+    line-height: 40px; 
+    margin: 0 5px;
+    font-size: 30px;
+    border-radius: 25%;
+    display: inline-block;
+    color: var(--color-text-2);
+}
+
+.btn-footer:active {
+    transform: scale(1.07);
+    transition: 0.1s;
+}
+
+/* DESIGNED BY ////////////////////////////*/
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-design);
+    font-size: 90%;
+    margin-top: 30%;
+}
+
+.arthursant{
+    margin: 0 0.5%;
+    font-size: 110%;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(224, 224, 224);
+}
+
+/* Responsividade para desktop ////////////////////////////*/
+
+@media (min-width: 500px) {
+    header {
+        margin-top:15%;
+    }
+
+    footer p {
+        margin-top: 10%;
+    }
+
+    .arthursant{
+        margin: 0 0.7%;
+        font-size: 117%;
+    }
+}
