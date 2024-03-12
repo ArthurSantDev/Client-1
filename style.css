@@ -83,7 +83,7 @@ header p {
     color: var(--color-text-2);
 }
 
-/* BTN STYLE ///////////////////////////////*/
+/* BTN STYLE */
 
 section.btn-links {  /* BTN longos */
     display: flex;
@@ -91,7 +91,7 @@ section.btn-links {  /* BTN longos */
     gap: 20px;
 }
 
-a.link button {  /* BTN longos */
+button {  /* BTN longos */
     width: 100%;
     padding: 13px 20px;
     display: flex;
@@ -100,7 +100,12 @@ a.link button {  /* BTN longos */
     border: none;
     border-radius: 12px;
     cursor: pointer;
-    color: var(--color-text);
+    background-color: white;
+}
+
+button:active {  /* Animação dos btn */
+    transform: scale(1.07);
+    transition: 0.1s;
 }
 
 a.link b {  /* Text */
@@ -114,12 +119,7 @@ a.link i {  /* Icons */
     font-size: 22px;
 }
 
-button:active {  /* Animação dos btn */
-    transform: scale(1.07);
-    transition: 0.1s;
-}
-
-/* FOOTER STYLE /////////////////////////*/
+/* FOOTER STYLE */
 
 footer {  /* BTN Quadrados */
     text-align: center;
@@ -138,11 +138,9 @@ footer a.btn-footer {   /* BTN de baixo */ /* O fundo dele é o .gradient */
 }
 
 .btn-footer:active {
-    transform: scale(1.1);
+    transform: scale(1.15);
     transition: 0.1s;
 }
-
-/* DESIGNED BY */
 
 footer p {   
     font-size: 8px;
