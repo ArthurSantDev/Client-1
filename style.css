@@ -119,7 +119,7 @@ button:active {  /* Animação dos btn */
     transition: 0.1s;
 }
 
-/* FOOTER STYLE ////////////////////////////*/
+/* FOOTER STYLE /////////////////////////*/
 
 footer {  /* BTN Quadrados */
     text-align: center;
@@ -142,20 +142,20 @@ footer a.btn-footer {   /* BTN de baixo */ /* O fundo dele é o .gradient */
     transition: 0.1s;
 }
 
-/* DESIGNED BY ////////////////////////////*/
+/* DESIGNED BY */
 
-footer p {
+footer p {   
+    font-size: 8px;
+    margin-top: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--color-design);
-    font-size: 90%;
-    margin-top: 30%;
 }
 
-.arthursant{
-    margin: 0 0.6%;
-    font-size: 115%;
+.arthursant{ 
+    font-size: 8.4px;
+    margin: 0 3px;
     text-decoration: none;
     cursor: pointer;
     color: rgb(224, 224, 224);
