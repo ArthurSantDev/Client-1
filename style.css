@@ -11,10 +11,23 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom left,#9494a0,#37373b);
     background-repeat: no-repeat;
     height: 100%;
     user-select: none;
+}/*linear-gradient(to bottom left,#9494a0,#37373b)*/
+
+section.back {
+    width: 100%;
+    height: 100vh !important;  /* Forçar a ter 100vh de acordo com o tamanho da tela */
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.back {
+    background-image: url("img/estevao-blur.png");
 }
 
 .gradient { /* Fundo dos btn */
@@ -125,7 +138,7 @@ footer a.btn-footer {   /* BTN de baixo */ /* O fundo dele é o .gradient */
 }
 
 .btn-footer:active {
-    transform: scale(1.07);
+    transform: scale(1.1);
     transition: 0.1s;
 }
 
@@ -141,8 +154,8 @@ footer p {
 }
 
 .arthursant{
-    margin: 0 0.5%;
-    font-size: 110%;
+    margin: 0 0.6%;
+    font-size: 115%;
     text-decoration: none;
     cursor: pointer;
     color: rgb(224, 224, 224);
@@ -150,7 +163,7 @@ footer p {
 
 /* Responsividade para desktop ////////////////////////////*/
 
-@media (min-width: 800px) {
+@media (min-width: 500px) {
 
     header {
         margin-top:15%;
