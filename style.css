@@ -55,6 +55,7 @@ section.back {
 a {     /* Custum links */
     color: var(--color-text);
     text-decoration: none;
+    user-select: none;
 }
 
 /* HEADER STYLE ///////////////////////////////*/
@@ -109,15 +110,17 @@ button:active {  /* Animação dos btn */
 }
 
 a.link b {  /* Text */
+    color: var(--color-text);
     font-size: 13px;
     margin-left: 20px;
-    color: var(--color-text)
+    user-select: none;
 }
 
 a.link i {  /* Icons */
     color: var(--color-text);
     margin-right: 20px;
     font-size: 22px;
+    user-select: none;
 }
 
 /* FOOTER STYLE */
@@ -149,6 +152,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
     color: var(--color-design);
 }
 
