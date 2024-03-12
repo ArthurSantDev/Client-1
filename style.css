@@ -111,6 +111,7 @@ button:active {  /* Animação dos btn */
 a.link b {  /* Text */
     font-size: 13px;
     margin-left: 20px;
+    color: var(--color-text)
 }
 
 a.link i {  /* Icons */
@@ -152,7 +153,7 @@ footer p {
 }
 
 .arthursant{ 
-    font-size: 8.4px;
+    font-size: 8.7px;
     margin: 0 3px;
     text-decoration: none;
     cursor: pointer;
