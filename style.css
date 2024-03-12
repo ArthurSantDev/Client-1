@@ -43,7 +43,7 @@ section.back {
 .container {   /* Tamanho do que parece na tela */
     max-width: 400px;  /* Tamanho máximo para os lados */
     max-height: 700px; /* Tamanho máximo para cima e baixo */
-    height: 80%; /*////////////////////////////////////////////////////////*/
+    height: 100%;
     margin: auto auto;
     display: flex;
     flex-direction: column;
@@ -65,11 +65,10 @@ header {
     margin-top: 35%;
 }
 
-img {
+header > img {
     max-width: 115px;
     margin-bottom: 20px;
     border-radius: 100%;
-    margin-top: 70px; /*////////////////////////////////////////////////////////*/
 }
 
 header > h1 {
