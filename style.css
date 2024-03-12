@@ -31,7 +31,7 @@ body {
     max-width: 400px;  /* Tamanho máximo para os lados */
     max-height: 700px; /* Tamanho máximo para cima e baixo */
     height: 100%;
-    margin: 0 auto;
+    margin: auto auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,7 +150,8 @@ footer p {
 
 /* Responsividade para desktop ////////////////////////////*/
 
-@media (min-width: 500px) {
+@media (min-width: 800px) {
+
     header {
         margin-top:15%;
     }
@@ -159,8 +160,4 @@ footer p {
         margin-top: 10%;
     }
 
-    .arthursant{
-        margin: 0 0.7%;
-        font-size: 117%;
-    }
 }
