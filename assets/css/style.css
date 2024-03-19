@@ -4,35 +4,15 @@
     font-family: 'Montserrat', 'sans-serif';
 }
 
-html {
-    width: 100%;
-    height: 100vh;
-    font-size: 10px;
-}
-
 body {
     background-repeat: no-repeat;
     height: 100%;
     user-select: none;
-}/*linear-gradient(to bottom left,#9494a0,#37373b)*/
-
-section.back {
-    width: 100%;
-    height: 100vh !important;  /* Forçar a ter 100vh de acordo com o tamanho da tela */
-    position: relative;
-    overflow: hidden;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-section.back {
-    background-image: url("img/estevao-blur.svg");
 }
 
 .gradient { /* Fundo dos btn */
     background: linear-gradient(to bottom,#ffffff,#ffffff);
-} /*#ebebeb*/
+}
 
 :root {
     --color-text: #000000;
@@ -40,11 +20,22 @@ section.back {
     --color-design: #b9b9b9;
 }
 
-.container {   /* Tamanho do que parece na tela */
-    max-width: 400px;  /* Tamanho máximo para os lados */
-    max-height: 700px; /* Tamanho máximo para cima e baixo */
-    height: 100%;
-    margin: auto auto;
+/*------------------------------------------------------------------------*/
+
+#background {
+    width: 100%;
+    height: 100vh;  
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/estevao-blur.svg"); 
+}
+
+.container {
+    max-width: 400px; 
+    max-height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,12 +43,12 @@ section.back {
     color: var(--color-text);
 }
 
-a {     /* Custum links */
+a {
     color: var(--color-text);
     text-decoration: none;
 }
 
-/* HEADER STYLE ///////////////////////////////*/
+/*------------------------------------------------------------------------*/
 
 header {
     text-align: center;
@@ -72,20 +63,20 @@ header > img {
 }
 
 header > h1 {
-    font-style: 130%;
+    font-size: 18px;
     margin-bottom: 10px;
     font-weight: 600;
     color: var(--color-text-2);
 }
 
 header p {
-    font-size: 110%;
+    font-size: 11px;
     color: var(--color-text-2);
 }
 
-/* BTN STYLE */
+/*------------------------------------------------------------------------*/
 
-section.btn-links {  /* BTN longos */
+section.long {  /* BTN longos */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -108,26 +99,26 @@ button:active {  /* Animação dos btn */
     transition: 0.1s;
 }
 
-a.link b {  /* Text */
+a.button b {  /* Text */
     color: var(--color-text);
     font-size: 13px;
     margin-left: 20px;
 }
 
-a.link i {  /* Icons */
+a.button i {  /* Icons */
     color: var(--color-text);
     margin-right: 20px;
     font-size: 22px;
 }
 
-/* FOOTER STYLE */
+/*------------------------------------------------------------------------*/
 
-footer {  /* BTN Quadrados */
+footer {  
     text-align: center;
     margin: 30px;
 }
 
-footer a.btn-footer {   /* BTN de baixo */ /* O fundo dele é o .gradient */
+footer a.icon {  
     width: 40px;
     height:40px;    
     line-height: 40px; 
@@ -138,7 +129,7 @@ footer a.btn-footer {   /* BTN de baixo */ /* O fundo dele é o .gradient */
     color: var(--color-text-2);
 }
 
-.btn-footer:active {
+.icon:active {
     transform: scale(1.15);
     transition: 0.1s;
 }
@@ -160,7 +151,7 @@ footer p {
     color: rgb(224, 224, 224);
 }
 
-/* Responsividade para desktop ////////////////////////////*/
+/*------------------------------------------------------------------------*/
 
 @media (min-width: 500px) {
 
