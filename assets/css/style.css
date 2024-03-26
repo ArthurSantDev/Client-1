@@ -20,34 +20,26 @@
 }
 
 a {
-    color: var(--color-text);
     text-decoration: none;
+    color: var(--color-text);
 }
 
-/*.background {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    background: var(--color-gradient);
-    background-repeat: no-repeat;                
-}*/
-
 .background {
-    width: 100%;
-    height: 100vh;  
     display: flex;
+    align-items: center;
     flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;       
     position: relative;
     overflow: hidden;
+    background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: cover;
     background-image: url("../img/estevao-blur.svg"); 
 }
 
 .container {
-    margin: 17% 0 0;
     padding: 0px 20px;
     user-select: none;
     max-width: 500px;
@@ -56,7 +48,7 @@ a {
     height: 100vh;
 }
 
-/*_________________________________________________________________*/
+/*____________________________________________*/
 
 header {
     text-align: center;
@@ -65,7 +57,7 @@ header {
 
 header img {
     width: 130px;
-    margin: 10px;
+    margin: 0 0 10px 0;
     border-radius: 100%;
 }
 
@@ -81,7 +73,7 @@ header p {
     color: var(--color-text-w);
 }
 
-/*_________________________________________________________________*/
+/*____________________________________________*/
 
 section {  
     display: flex;
@@ -115,7 +107,7 @@ section {
     font-size: 22px;
 }
 
-/*_________________________________________________________________*/
+/*____________________________________________*/
 
 footer {  /* BTN Quadrados */
     text-align: center;
@@ -133,8 +125,6 @@ footer {  /* BTN Quadrados */
     color: var(--color-text-w);
     
 }
-
-
 
 footer p {   
     font-size: 8px;
